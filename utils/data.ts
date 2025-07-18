@@ -4,6 +4,7 @@ interface NavbarItem {
   href: string;
 }
 
+
 export const navbarItems: NavbarItem[] = [
   {
     id: 0,
@@ -27,3 +28,5 @@ export const navbarItems: NavbarItem[] = [
     href: "/services",
   },
 ];
+
+
