@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from './Hero/Hero'
 
 const Home = () => {
   return (
-    <div>this is home page</div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
