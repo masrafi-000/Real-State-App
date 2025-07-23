@@ -118,7 +118,7 @@ const Hero = () => {
       {/* card */}
 
       <div className="mt-10 md:mt-0.5 p-[10px] lg:p-5  w-full h-auto bg-[var(--color-gray_08)] border border-[var(--color-gray_15)] ring-2 ring-[var(--color-gray_15)] ">
-        <HeroCard className="w-full h-auto bg-[var(--color-gray_08)] flex flex-wrap items-center justify-center gap-4 " />
+        <HeroCard className="w-full h-auto bg-[var(--color-gray_08)] flex flex-wrap items-center justify-center gap-3 " />
       </div>
     </div>
   );
