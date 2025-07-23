@@ -1,27 +1,37 @@
 @import "tailwindcss";
 
-
 :root {
-        --color-absolute_black : #000000;
-        --color-absolute_white: #ffffff;
-        --color-purple_60: #703BF7;
-        --color-purple_65: #1A64FF;
-        --color-purple_70: #FF9533;
-        --color-purple_75: #A685FA;
-        --color-purple_90: #FFE4CC;
-        --color-purple_95: #FFF1E5;
-        --color-purple_97: #FFF7F0;
-        --color-purple_99: #FFFCFA;
-        --color-white_90: #E4E4E7;
-        --color-white_95: #F1F1F3;
-        --color-white_97: #F7F7F8 ;
-        --color-white_99: #FCFCFD;
-        --color-gray_08: #141414;
-        --color-gray_10: #1A1A1A;
-        --color-gray_15: #262626;
-        --color-gray_20: #333333;
-        --color-gray_30: #4D4D4D;
-        --color-gray_40: #666666;
-        --color-gray_50:  #808080;
-        --color-gray_60: #999999;
+  --color-absolute_black: #000000;
+  --color-absolute_white: #ffffff;
+  --color-purple_60: #703bf7;
+  --color-purple_65: #1a64ff;
+  --color-purple_70: #ff9533;
+  --color-purple_75: #a685fa;
+  --color-purple_90: #ffe4cc;
+  --color-purple_95: #fff1e5;
+  --color-purple_97: #fff7f0;
+  --color-purple_99: #fffcfa;
+  --color-white_90: #e4e4e7;
+  --color-white_95: #f1f1f3;
+  --color-white_97: #f7f7f8;
+  --color-white_99: #fcfcfd;
+  --color-gray_08: #141414;
+  --color-gray_10: #1a1a1a;
+  --color-gray_15: #262626;
+  --color-gray_20: #333333;
+  --color-gray_30: #4d4d4d;
+  --color-gray_40: #666666;
+  --color-gray_50: #808080;
+  --color-gray_60: #999999;
+}
+
+@theme {
+  --breakpoint-xs: 320px;
+  
+}
+
+@layer components {
+  .heroInteractiveCard {
+    @apply flex  flex-col items-center   lg:items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl px-4 py-4 md:px-5 md:py-[14px] xl:px-6 xl:py-4 w-full  sm:w-[173px]  md:w-[193px] xl:w-[240px] h-[91px] md:h-[99px] xl:h-[121px];
+  }
 }

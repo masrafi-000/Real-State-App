@@ -11,7 +11,7 @@ type Props = {
 };
 
 const NavbarMenu = ({ openNav }: Props) => {
-  const [isActive, setIsActive] = useState<number | null>(null);
+  const [isActive, setIsActive] = useState<number | null>(0);
 
   return (
     <div className=" w-full h-[99px]  bg-[var(--color-gray_10)] text-white ">
@@ -22,7 +22,7 @@ const NavbarMenu = ({ openNav }: Props) => {
           <p>Estatein</p>
         </Link>
         {/* menu */}
-        <div className="hidden md:flex items-center justify-center gap-10">
+        <div className="hidden md:flex items-center justify-center md:gap-6 lg:gap-10">
           {navbarItems.map((item) => (
             <Link
               key={item.name}

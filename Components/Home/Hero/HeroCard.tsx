@@ -5,7 +5,7 @@ type Props = {
 const HeroCard = ({ className }: Props) => {
   return (
     <div
-      className={`${className} flex flex-wrap items-center justify-center gap-5 `}
+      className={`${className}  `}
     >
       {/* 1st Card  */}
       <div className="relative flex flex-col items-center justify-center gap-4 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)]  h-[144px] w-[164px] lg:h-[160px] lg:w-[347px] 2xl:h-[212px]  2xl:w-[455px]  rounded-xl ">
@@ -29,7 +29,7 @@ const HeroCard = ({ className }: Props) => {
           </div>
         </div>
         {/* content */}
-        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-1.5 text-white text-center">
+        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-[150%] text-white text-center w-[136px] lg:w-auto ">
           Find Your Dream Home
         </h1>
         {/* button */}
@@ -72,7 +72,7 @@ const HeroCard = ({ className }: Props) => {
           </div>
         </div>
         {/* content */}
-        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-1.5 text-white text-center">
+        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-[150%] text-white text-center w-[136px] lg:w-auto ">
           Unlock Property Value
         </h1>
         {/* button */}
@@ -113,7 +113,7 @@ const HeroCard = ({ className }: Props) => {
           </div>
         </div>
         {/* content */}
-        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-1.5 text-white text-center">
+        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-[150%] text-white text-center w-[136px] lg:w-auto ">
           Effortless Property Management
         </h1>
         {/* button */}
@@ -150,7 +150,7 @@ const HeroCard = ({ className }: Props) => {
           </div>
         </div>
         {/* content */}
-        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-1.5 text-white text-center">
+        <h1 className="text-sm lg:text-base 2xl:text-xl font-semibold 2xl:font-medium leading-[150%] text-white text-center w-[136px] lg:w-auto ">
           Smart Investments, Informed Decisions
         </h1>
         {/* button */}

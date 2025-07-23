@@ -3,11 +3,17 @@ import HeroCard from "./HeroCard";
 
 const Hero = () => {
   return (
-    <div className="w-full h-auto- bg-[var(--color-gray_08)] ">
+    <div className="w-full h-auto bg-[var(--color-gray_08)] ">
+      {/* Top Image Section */}
+
+      <div className="mt-10  min-w-[320px] min-h-[302px] sm:min-h-[400px] md:min-h-[500px] mx-[5%] border border-[var(--color-gray_15)] rounded-xl lg:hidden bg-[var(--color-gray_10)] bg-[url('/images/hero.png')] bg-no-repeat bg-cover bg-center mb-14  ">
+      
+      </div>
+
       {/* text & image content */}
-      <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 gap-[80px] bg-[var(--color-gray_08)]  ">
-        <div className="h-[814px] w-full  bg-[var(--color-gray_08)] pl-[5%] lg:pl-[10%] ">
-          <div className=" h-full w-full text-white flex items-start justify-center flex-col gap-[60px]">
+      <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 gap-[80px] bg-[var(--color-gray_08)]   ">
+        <div className="h-auto w-full  bg-[var(--color-gray_08)] pl-[5%] pr-[5%] lg:pr-0 lg:pl-[10%] mb-2 ">
+          <div className=" h-full w-full text-white flex items-start justify-start lg:justify-center flex-col gap-[60px]">
             {/* heading */}
             <div className="relative">
               <div className="flex flex-col gap-6 ">
@@ -20,8 +26,9 @@ const Hero = () => {
                   dreams.
                 </p>
               </div>
-              <div className="absolute  -top-50 lg:top-0 lg:-right-40 h-[175px] w-[175px] rounded-full border-[1px] border-[var(--color-gray_15)] bg-[var(--color-gray_08)] flex items-center justify-center text-white ">
-                <div className="z-[10] h-20 w-20 flex items-center justify-center bg-[var(--color-gray_10)] rounded-full text-white ">
+              {/* circle */}
+              <div className="absolute -top-30 lg:top-0 lg:-right-35  xl:-right-40 size-[117px] lg:size-[129px]  xl:size-[175px] rounded-full border-[1px] border-[var(--color-gray_15)] bg-[var(--color-gray_08)] flex items-center justify-center text-white ">
+                <div className="z-[10] size-[53.18px] lg:size-[58.64px] xl:size-20 flex items-center justify-center bg-[var(--color-gray_10)] rounded-full text-white ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -63,37 +70,39 @@ const Hero = () => {
               </div>
             </div>
             {/* buttons */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-col sm:flex-row w-full  ">
               <Link
                 href="/about"
-                className="text-white border-[1px] border-[var(--color-gray_15)] h-[63px] w-[139px] rounded-xl flex items-center justify-center cursor-pointer hover:outline-none hover:bg-purple-500 text-lg "
+                className="text-white border-[1px] border-[var(--color-gray_15)]   h-[63px]  sm:w-[139px] rounded-xl flex items-center justify-center cursor-pointer hover:outline-none hover:bg-purple-500 text-lg "
               >
                 Learn More
               </Link>
               <Link
-                className="text-white rounded-xl flex items-center justify-center h-[63px] w-[191px] bg-[var(--color-purple_60)] hover:bg-gray-950 "
+                className="text-white  h-[63px]  sm:w-[191px] rounded-xl flex items-center justify-center  bg-[var(--color-purple_60)] hover:bg-gray-950 "
                 href="/properties"
               >
                 Browse Properties
               </Link>
             </div>
             {/* interactivty card */}
-            <div className="flex flex-wrap gap-5 w-full">
-              <div className="flex  flex-col   items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl h-[121px] px-4 py-6  ">
-                <h1 className="text-4xl font-bold leading-1.2">200+</h1>
-                <p className="text-xl  font-medium text-[var(--color-gray_60)] ">
+            <div className="flex flex-wrap gap-5 w-full  md:mb-0">
+              <div className="heroInteractiveCard ">
+                <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold leading-[150%]">
+                  200+
+                </h1>
+                <p className=" text-base md:text-[16px]  xl:text-xl  font-medium leading-[150%] text-[var(--color-gray_60)] text-center ">
                   Happy Customers
                 </p>
               </div>
-              <div className="flex  flex-col  items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl h-[121px]  px-4 py-6 ">
-                <h1 className="text-4xl font-bold leading-1.2">10k+</h1>
-                <p className="text-xl  font-medium text-[var(--color-gray_60)] ">
+              <div className="heroInteractiveCard ">
+                <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold leading-[150%]">10k+</h1>
+                <p className="text-base md:text-[16px]  xl:text-xl  font-medium leading-[150%] text-[var(--color-gray_60)] text-center ">
                   Properties For Clients
                 </p>
               </div>
-              <div className="flex  flex-col  items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl h-[121px]   px-4 py-6 ">
-                <h1 className="text-4xl font-bold leading-1.2">16+</h1>
-                <p className="text-xl  font-medium text-[var(--color-gray_60)] ">
+              <div className="heroInteractiveCard">
+                <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold leading-[150%]">16+</h1>
+                <p className="text-base md:text-[16px]  xl:text-xl  font-medium leading-[150%] text-[var(--color-gray_60)] text-center ">
                   Years of Experience
                 </p>
               </div>
@@ -103,12 +112,14 @@ const Hero = () => {
         {/* Image Section */}
         <div className="hidden lg:flex items-end justify-center bg-[var(--color-gray_10)] h-[622px]  lg:h-[814px]  ">
           <div className="w-full h-full bg-[url('/images/hero.png')] bg-no-repeat bg-cover  object-cover "></div>
-          {/* <Image src="/images/hero.png" alt="hero" width={920} height={814} className="object-cover" /> */}
+          
         </div>
       </div>
       {/* card */}
 
-      <HeroCard className="mt-0.5 w-full bg-[var(--color-gray_08)] h-[320px] border border-[var(--color-gray_15)] ring-2 ring-[var(--color-gray_15)]" />
+      <div className="mt-10 md:mt-0.5 p-[10px] lg:p-5  w-full h-auto bg-[var(--color-gray_08)] border border-[var(--color-gray_15)] ring-2 ring-[var(--color-gray_15)] ">
+        <HeroCard className="w-full h-auto bg-[var(--color-gray_08)] flex flex-wrap items-center justify-center gap-4 " />
+      </div>
     </div>
   );
 };
