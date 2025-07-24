@@ -102,7 +102,7 @@ const FeaturedProperties: React.FC<Props> = (props) => {
       {/* CTA Button */}
       <Link
         href="/properties"
-        className="w-[196px] h-[64px] px-6 py-4 bg-[var(--color-gray_10)] rounded-lg text-white border border-[var(--color-gray_15)] absolute top-20 right-0 flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-purple-500 text-lg font-medium leading-[150%]"
+        className="w-[196px] h-[64px] px-6 py-4 bg-[var(--color-gray_10)] rounded-lg text-white border border-[var(--color-gray_15)] absolute top-20 right-0 flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-purple-500 text-sm font-medium leading-[150%]"
       >
         View All Properties
       </Link>

@@ -8,6 +8,8 @@ import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import TestimonialCard from './TestimonialCard';
 import { TestimonialCardData } from '@/utils/data';
+import Autoplay from 'embla-carousel-autoplay';
+
 
 type Props = {
   slides: number[];
@@ -17,8 +19,12 @@ type Props = {
 
 const Testimonials: React.FC<Props> = (props) => {
   const {slides, options} = props
+  const autoplayOptions = {
+    delay: 4000,
+    stopOnInteraction: true,
+  }
 
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
   const [scrollProgress, setScrollProgress] = useState(0)
 
   const  onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
@@ -100,7 +106,7 @@ const Testimonials: React.FC<Props> = (props) => {
       {/* CTA Button */}
       <Link
         href="#"
-        className="w-[196px] h-[64px] px-6 py-4 bg-[var(--color-gray_10)] rounded-lg text-white border border-[var(--color-gray_15)] absolute top-20 right-0 flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-purple-500 text-lg font-medium leading-[150%]"
+        className="w-[196px] h-[64px] px-6 py-4 bg-[var(--color-gray_10)] rounded-lg text-white border border-[var(--color-gray_15)] absolute top-20 right-0 flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-purple-500 text-sm font-medium leading-[150%]"
       >
         View All Testimonials
       </Link>
