@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
+import { EmblaCarouselType } from "embla-carousel";
 import React, {
   ComponentPropsWithRef,
   useCallback,
   useEffect,
   useState,
 } from "react";
-import { EmblaCarouselType } from "embla-carousel";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 type UsePrevNextButtonsType = {
@@ -17,7 +17,8 @@ type UsePrevNextButtonsType = {
 };
 
 export const usePrevNextButtons = (
-  emblaApi: EmblaCarouselType | undefined
+  emblaApi: EmblaCarouselType | undefined,
+  onButtonClick?: (emblaApi: EmblaCarouselType) => void
 ): UsePrevNextButtonsType => {
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
@@ -25,12 +26,14 @@ export const usePrevNextButtons = (
   const onPrevButtonClick = useCallback(() => {
     if (!emblaApi) return;
     emblaApi.scrollPrev();
-  }, [emblaApi]);
+    if (onButtonClick) onButtonClick(emblaApi);
+  }, [emblaApi, onButtonClick]);
 
   const onNextButtonClick = useCallback(() => {
     if (!emblaApi) return;
     emblaApi.scrollNext();
-  }, [emblaApi]);
+    if (onButtonClick) onButtonClick(emblaApi);
+  }, [emblaApi, onButtonClick]);
 
   const onSelect = useCallback((api: EmblaCarouselType) => {
     setPrevBtnDisabled(!api.canScrollPrev());
@@ -40,16 +43,8 @@ export const usePrevNextButtons = (
   useEffect(() => {
     if (!emblaApi) return;
 
-    const handleSelect = () => onSelect(emblaApi);
-
-    handleSelect(); // initial state
-    emblaApi.on("select", handleSelect);
-    emblaApi.on("reInit", handleSelect);
-
-    return () => {
-      emblaApi.off("select", handleSelect);
-      emblaApi.off("reInit", handleSelect);
-    };
+    onSelect(emblaApi);
+    emblaApi.on("reInit", onSelect).on("select", onSelect);
   }, [emblaApi, onSelect]);
 
   return {
@@ -64,11 +59,13 @@ export const usePrevNextButtons = (
 type PropType = ComponentPropsWithRef<"button">;
 
 export const PrevButton: React.FC<PropType> = (props) => {
+  const { ...restProp } = props;
+
   return (
     <button
       className="text-white size-10 rounded-full flex items-center justify-center cursor-pointer bg-[var(--color-gray_10)] embla__button embla__button--prev disabled:opacity-50"
       type="button"
-      {...props}
+      {...restProp}
     >
       <GoArrowLeft size={24} />
     </button>
@@ -76,11 +73,13 @@ export const PrevButton: React.FC<PropType> = (props) => {
 };
 
 export const NextButton: React.FC<PropType> = (props) => {
+  const { ...restProp } = props;
+
   return (
     <button
       className="text-white size-10 rounded-full flex items-center justify-center cursor-pointer bg-[var(--color-gray_10)] embla__button embla__button--next disabled:opacity-50"
       type="button"
-      {...props}
+      {...restProp}
     >
       <GoArrowRight size={24} />
     </button>

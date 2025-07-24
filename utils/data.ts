@@ -14,6 +14,9 @@ import pimage10 from "../public/images/properties-10.png";
 import pimage11 from "../public/images/properties-11.png";
 import pimage12 from "../public/images/properties-12.png";
 import pimage13 from "../public/images/properties-13.png";
+import timage1 from '../public/images/Profile-1.png';
+import timage2 from '../public/images/Profile-2.png';
+import timage3 from '../public/images/Profile-3.png';
 
 
 
@@ -192,3 +195,80 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
   },
   
 ];
+
+
+interface TestimonialItem {
+  id: string;
+  image: StaticImageData;
+  name: string;
+  title: string;
+  desc: string;
+  location: string;
+}
+
+export const TestimonialCardData: TestimonialItem[] = [
+  {
+    id: nanoid(),
+    image: timage1,
+    name: "John Doe",
+    title: "Happy Customer",
+    desc: "I love this property! It exceeded my expectations. The location is perfect, and the amenities are top-notch. I highly recommend it to anyone looking for a new home.",
+    location: "New York, USA",
+  },
+  {
+    id: nanoid(),
+    image: timage2,
+    name: " Michael Johnson",
+    title: "Satisfied Client",
+    desc: "The team at Estatein was exceptional. They found us the perfect property within our budget. The entire process was smooth, and we couldn't be happier with our new home.",
+    location: "Los Angeles, USA",
+  },
+  {
+    id: nanoid(),
+    image: timage3, 
+    name: "Jane Smith",
+    title: "Delighted Buyer",
+    desc: "Estatein exceeded our expectations. The property we found is beautiful, and the team was very accommodating. We are extremely satisfied with our purchase.",
+    location: "Chicago, USA",
+  },
+  
+]
+
+interface FAQItem  {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export const FAQData: FAQItem[] = [
+  {
+    id: nanoid(),
+    question: "How do I search for properties?",
+    answer: "To search for properties, simply visit our website and use the search bar.",
+  },
+  {
+    id: nanoid(), 
+    question: "How do I contact you?",
+    answer: "You can contact us by phone, email, or through our website's contact form. Our team is available to assist you 24/7.",
+  },
+  {
+    id: nanoid(),
+    question: "How do I schedule a viewing?",
+    answer: "Once you have found a property you are interested in, you can schedule a viewing by contacting us. ",
+  },
+  {
+    id: nanoid(),
+    question: "How do I make an offer?",
+    answer: "When you are ready to make an offer on a property, our team will guide you through the process. ",
+  },
+  {
+    id: nanoid(),
+    question: "What happens after I make an offer?",
+    answer: "After you make an offer, the property owner will review it. If they accept your offer, we will help you with the next steps, such as arranging inspections and financing.",
+  },
+  {
+    id: nanoid(),
+    question: "What if I have more questions?",
+    answer: "If you have any questions or need further assistance, please don't hesitate to contact us.",
+  },
+]
