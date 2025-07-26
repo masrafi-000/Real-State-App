@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar'
 import FeaturedProperties from './FeaturedProperties/FeaturedProperties'
 import Testimonials from './Testimonial/Testimonials'
 import Faq from './FAQ/Faq'
+import Footer from './Footer/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <FeaturedProperties slides={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]} options={{ loop: false }} />
       <Testimonials slides={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]} options={{ loop: false }} />
       <Faq slides={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]} options={{ loop: false }} />
+      <Footer/>
     </div>
   )
 }
