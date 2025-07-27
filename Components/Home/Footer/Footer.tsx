@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import FotterTop from "./FotterTop";
 
 const Footer = () => {
   return (
     <div className="container mx-auto bg-[var(--color-gray_08)] ">
+      <FotterTop />
       <div className="grid grid-cols-[0, 2fr] ">
         {/* logo and input */}
         <div>
