@@ -17,7 +17,7 @@ type PropertyItem = {
 
 const FeaturedCard = ({ item }: { item: PropertyItem }) => {
   return (
-    <div className="w-[512px] h-auto p-10 flex items-center justify-start flex-col text-white border border-[var(--color-gray_15)] rounded-2xl gap-[30px] ">
+    <div className="md:w-[413px] 2xl:w-[512px] h-auto p-10 flex items-center justify-start flex-col text-white border border-[var(--color-gray_15)] rounded-2xl gap-[30px] ">
       {/* Image */}
       <div className="relative w-full h-[300px] border border-[var(--color-gray_15)] rounded-2xl overflow-hidden  ">
         <Image
@@ -40,18 +40,18 @@ const FeaturedCard = ({ item }: { item: PropertyItem }) => {
       </div>
 
       {/* Tags */}
-      <div className="flex gap-4 w-full justify-start">
-        <div className="flex items-center gap-2 px-[14px] py-2 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full ">
+      <div className="flex gap-1 w-full justify-start">
+        <div className="flex items-center px-[10px]  2xl:px-[14px] py-1 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full ">
           <IoBed size={24} />
-          <span>{item.icon_1_desc}</span>
+          <span className="text-sm">{item.icon_1_desc}</span>
         </div>
-        <div className="flex items-center gap-2 px-[14px] py-2 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full ">
+        <div className="flex items-center px-[10px]  2xl:px-[14px] py-1 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full  ">
           <FaBath size={24} />
-          <span>{item.icon_2_desc}</span>
+          <span className="text-sm">{item.icon_2_desc}</span>
         </div>
-        <div className="flex items-center gap-2 px-[14px] py-2 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full ">
+        <div className="flex items-center px-[10px]  2xl:px-[14px] py-1 bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] rounded-full  ">
           <HiMiniBuildingOffice size={24} />
-          <span>{item.icon_3_desc}</span>
+          <span className="text-sm">{item.icon_3_desc}</span>
         </div>
       </div>
 
@@ -61,13 +61,13 @@ const FeaturedCard = ({ item }: { item: PropertyItem }) => {
           <h2 className="text-lg font-medium leading-[150%] text-[var(--color-gray_60)] ">
             Price
           </h2>
-          <p className="text-2xl font-semibold leading-[150%] ">
+          <p className=" text-xl 2xl:text-2xl font-semibold leading-[150%] ">
             {item.price}
           </p>
         </div>
         <Link
           href={`/properties/${item.id}`}
-          className="px-6 py-4 bg-[var(--color-purple_60)] rounded-2xl text-lg font-medium leading-[150%] flex items-center justify-center "
+          className=" px-4 2xl:px-6 py-4 bg-[var(--color-purple_60)] rounded-2xl text-lg font-medium leading-[150%] flex items-center justify-center "
         >
           View Property Details
         </Link>
