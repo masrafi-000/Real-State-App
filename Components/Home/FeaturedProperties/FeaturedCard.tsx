@@ -68,7 +68,7 @@ const FeaturedCard = ({ item }: { item: PropertyItem }) => {
         <Link
           href={`/properties/${item.id}`}
           className=" px-4 2xl:px-6 py-4 bg-[var(--color-purple_60)] rounded-2xl text-lg font-medium leading-[150%] flex items-center justify-center "
-        >
+          >
           View Property Details
         </Link>
       </div>
