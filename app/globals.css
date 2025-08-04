@@ -34,6 +34,9 @@
   .heroInteractiveCard {
     @apply flex  flex-col items-center   lg:items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl px-4 py-4 md:px-5 md:py-[14px] xl:px-6 xl:py-4 w-full  sm:w-[173px]  md:w-[193px] xl:w-[240px] h-[91px] md:h-[99px] xl:h-[121px];
   }
+  .aboutInteractiveCard {
+    @apply flex  flex-col items-center   lg:items-start justify-center bg-[var(--color-gray_10)] border-[1px] border-[var(--color-gray_15)] rounded-xl px-4 py-4 md:px-5 md:py-[14px]  w-full  sm:w-[173px]  md:w-[193px]  h-[91px] md:h-[99px] ;
+  }
 
   .embla__container {
   display: flex;
