@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar/Navbar";
+import Footer from "@/Components/Home/Footer/Footer";
 
 const urbanist = Urbanist({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
