@@ -16,6 +16,10 @@ import pimage6 from "../public/images/properties-6.png";
 import pimage7 from "../public/images/properties-7.png";
 import pimage8 from "../public/images/properties-8.png";
 import pimage9 from "../public/images/properties-9.png";
+import timgae1 from "../public/images/team-1.png"
+import timgae2 from "../public/images/team-2.png"
+import timgae3 from "../public/images/team-3.png";
+import timgae4 from "../public/images/team-4.png";
 
 interface NavbarItem {
   id: number;
@@ -350,3 +354,40 @@ export const ExperienceCardData: ExperienceCardData[] = [
       "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
   },
 ];
+
+
+interface TeamMemberData {
+  id: string
+  image: StaticImageData;
+  name: string;
+  title: string
+}
+
+export const TeamMemberData: TeamMemberData[] = [
+  {
+    id: nanoid(),
+    image: timgae1,
+    name: "Max Mitchell",
+    title: "Founder"
+  },
+  {
+    id: nanoid(),
+    image: timgae2,
+    name: "Sarah Johnson",
+    title: "Chief Real Estate Officer"
+  },
+  {
+    id: nanoid(),
+    image: timgae3,
+    name: "David Brown",
+    title: "Head of Property Management"
+  },
+  {
+    id: nanoid(),
+    image: timgae4,
+    name: "Michael Turner",
+    title: "Legal Counsel"
+  },
+
+
+]
