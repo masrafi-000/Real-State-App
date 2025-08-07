@@ -55,9 +55,9 @@ const Client: React.FC<Props> = ({ slides, options }) => {
           Our Valued Clients
         </h1>
         <p className="text-lg text-[var(--color-gray_60)] font-medium leading-[150%] w-[75%] ">
-          At Estatein, we have had the privilege of working with a diverse range
+          {`At Estatein, we have had the privilege of working with a diverse range
           of clients across various industries. Here are some of the clients
-          we've had the pleasure of serving
+          we've had the pleasure of serving`}
         </p>
       </div>
       {/* Card Carousel */}

@@ -20,6 +20,11 @@ import timgae1 from "../public/images/team-1.png"
 import timgae2 from "../public/images/team-2.png"
 import timgae3 from "../public/images/team-3.png";
 import timgae4 from "../public/images/team-4.png";
+import {  ComponentType } from "react";
+import { BsFillBarChartFill } from "react-icons/bs";
+import { AiFillPieChart } from "react-icons/ai";
+import { HiCircleStack } from "react-icons/hi2";
+import { FaBullhorn } from "react-icons/fa6";
 
 interface NavbarItem {
   id: number;
@@ -390,4 +395,42 @@ export const TeamMemberData: TeamMemberData[] = [
   },
 
 
+]
+
+
+ export interface PropertiesValueCardData<T> {
+  id: string;
+  icon: ComponentType<T>;
+  title: string;
+  desc: string;
+}
+
+export const PropertiesValueCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
+  {
+    id: nanoid(),
+    icon: BsFillBarChartFill,
+    
+    title:" Valuation Mastery",
+    desc: "Discover the true worth of your property with our expert valuation services."
+  },
+  {
+    id:nanoid(),
+    icon: AiFillPieChart,
+   
+    title: "Strategic Marketing",
+    desc: "Selling a property requires more than just a listing; it demands a strategic marketing approach."
+  },
+  {
+    id:nanoid(),
+    icon: HiCircleStack,
+    
+    title: "Negotiation Wizardry",
+    desc: "Negotiating the best deal is an art, and our negotiation experts are masters of it."
+  },
+  {
+    id:nanoid(),
+    icon: FaBullhorn,
+    title: "Closing Success",
+    desc: "A successful sale is not complete until the closing. We guide you through the intricate closing process."
+  }
 ]
