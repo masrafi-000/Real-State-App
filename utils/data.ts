@@ -21,10 +21,13 @@ import timgae2 from "../public/images/team-2.png"
 import timgae3 from "../public/images/team-3.png";
 import timgae4 from "../public/images/team-4.png";
 import {  ComponentType } from "react";
-import { BsFillBarChartFill } from "react-icons/bs";
+import { BsFillBarChartFill, BsStars } from "react-icons/bs";
 import { AiFillPieChart } from "react-icons/ai";
 import { HiCircleStack } from "react-icons/hi2";
-import { FaBullhorn } from "react-icons/fa6";
+import { FaBullhorn, FaTags } from "react-icons/fa6";
+import { MdDashboardCustomize, MdSunny } from "react-icons/md";
+import { BsFire } from "react-icons/bs";
+import { HiLightBulb } from "react-icons/hi2";
 
 interface NavbarItem {
   id: number;
@@ -433,4 +436,59 @@ export const PropertiesValueCardData: PropertiesValueCardData<React.ComponentPro
     title: "Closing Success",
     desc: "A successful sale is not complete until the closing. We guide you through the intricate closing process."
   }
+]
+
+export const PropertyManagementCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
+
+  {
+    id: nanoid(),
+    icon: MdDashboardCustomize,
+    title:" Tenant Harmony",
+    desc: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies."
+  },
+  {
+    id: nanoid(),
+    icon: FaTags,
+    title:" Maintenance Ease",
+    desc: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep."
+  },
+  {
+    id: nanoid(),
+    icon: BsStars,
+    title:" Financial Peace of Mind",
+    desc: "Managing property finances can be complex. Our financial experts take care of rent collection"
+  },
+  {
+    id: nanoid(),
+    icon: MdSunny,
+    title:" Legal Guardian",
+    desc: "Stay compliant with property laws and regulations effortlessly."
+  },
+]
+
+export const DecisionsCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
+  {
+    id: nanoid(),
+    icon: BsFillBarChartFill,
+    title:" Market Insight",
+    desc: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions"
+  },
+  {
+    id: nanoid(),
+    icon: BsFire,
+    title:"ROI Assessment",
+    desc: "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments"
+  },
+  {
+    id: nanoid(),
+    icon: HiLightBulb,
+    title:"Customized Strategies",
+    desc: "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs"
+  },
+  {
+    id: nanoid(),
+    icon: MdSunny,
+    title:"Diversification Mastery",
+    desc: "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations"
+  },
 ]
