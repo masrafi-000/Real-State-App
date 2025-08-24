@@ -3,7 +3,7 @@ import HeroCard from "./HeroCard";
 
 const Hero = () => {
   return (
-    <div className="w-full h-auto bg-[var(--color-gray_08)] ">
+    <section className="w-full h-auto bg-[var(--color-gray_08)] ">
       {/* Top Image Section */}
 
       <div className="mt-10  min-w-[320px] min-h-[302px] sm:min-h-[400px] md:min-h-[500px] mx-[5%] border border-[var(--color-gray_15)] rounded-xl lg:hidden bg-[var(--color-gray_10)] bg-[url('/images/hero.png')] bg-no-repeat bg-cover bg-center mb-14  ">
@@ -120,7 +120,7 @@ const Hero = () => {
       <div className="mt-10 md:mt-0.5 p-[10px] lg:p-5  w-full h-auto bg-[var(--color-gray_08)] border border-[var(--color-gray_15)] ring-2 ring-[var(--color-gray_15)] ">
         <HeroCard className="w-full h-auto bg-[var(--color-gray_08)] flex flex-wrap items-center justify-center gap-3 " />
       </div>
-    </div>
+    </section>
   );
 };
 

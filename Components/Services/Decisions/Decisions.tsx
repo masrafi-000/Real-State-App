@@ -4,7 +4,7 @@ import ServiceCard from '../Card/ServiceCard'
 
 const Decisions = () => {
   return (
-    <div className=' container mx-auto py-[80px] text-white'>
+    <section className=' container mx-auto py-[40px] text-white'>
         <div className='w-full grid grid-cols-3 gap-[20px]'>
 
             <div className='flex flex-col items-center justify-center gap-[50px] col-span-1 '>
@@ -29,7 +29,7 @@ const Decisions = () => {
             </div>
         </div>
 
-    </div>
+    </section>
   )
 }
 

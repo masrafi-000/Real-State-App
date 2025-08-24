@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function OurJourney() {
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 py-[80px] gap-[80px] ">
+        <section className="grid grid-cols-1 md:grid-cols-2 py-[40px] gap-[80px] ">
             <div className="flex flex-col items-start justify-center gap-5 text-white">
                 <div className="flex flex-col items-start justify-center gap-5">
                     <h1 className="text-5xl font-semibold leading-[150%] ">Our Journey</h1>
@@ -37,6 +37,6 @@ export default function OurJourney() {
                 <Image src="/images/about.png" alt="About Us" fill className="object-cover object-center " />
             </div>
             
-        </div>
+        </section>
     )
 }

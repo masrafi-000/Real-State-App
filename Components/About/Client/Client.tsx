@@ -15,7 +15,7 @@ type Props = {
   options?: EmblaOptionsType;
 };
 
-const Client: React.FC<Props> = ({ slides, options }) => {
+const Client: React.FC<Props> = ({  options }) => {
   const autoplay = Autoplay({ delay: 4000, stopOnInteraction: true });
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options }, [autoplay]);
@@ -24,7 +24,7 @@ const Client: React.FC<Props> = ({ slides, options }) => {
   const onNavButtonClick = useCallback(() => {
     if (!autoplay) return;
     autoplay.stop();
-  }, []);
+  }, [autoplay]);
 
   const {
     prevBtnDisabled,
@@ -49,7 +49,7 @@ const Client: React.FC<Props> = ({ slides, options }) => {
   }, [emblaApi, onScroll]);
 
   return (
-    <div className="container mx-auto py-[80px] text-white ">
+    <section className="container mx-auto py-[40px] text-white ">
       <div className="pb-[40px]">
         <h1 className="text-5xl font-semibold leading-[150%] ">
           Our Valued Clients
@@ -93,7 +93,7 @@ const Client: React.FC<Props> = ({ slides, options }) => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import ServiceCard from "../Card/ServiceCard";
 
 export default function PropertiesValue() {
   return (
-    <div className=" container mx-auto py-[80px] text-white">
+    <section className=" container mx-auto py-[40px] text-white">
       <div className="flex items-start justify-center flex-col gap-4 pb-[40px]  ">
         <h1 className="text-5xl font-semibold leading-[150%] ">
           Unlock Property Value
@@ -33,6 +33,6 @@ export default function PropertiesValue() {
             <p className="text-lg font-medium leading-[150%] text-[var(--color-gray_60)] ">Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

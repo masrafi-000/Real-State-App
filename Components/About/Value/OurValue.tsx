@@ -5,7 +5,7 @@ import { IoIosStar } from "react-icons/io";
 
 export default function OurValue() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 py-[80px] gap-[80px] text-white">
+    <section className="grid grid-cols-1 md:grid-cols-3 py-[40px] gap-[80px] text-white">
       <div className="col-span-1 flex flex-col items-start justify-center gap-5">
         <h1 className="text-5xl font-semibold leading-[150%] ">Our Value</h1>
         <p className="text-xl font-medium leading-[150%] text-[var(--color-gray_60)]">
@@ -61,6 +61,6 @@ export default function OurValue() {
             </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import ServiceCard from "../Card/ServiceCard";
 
 const PropertyManagement = () => {
   return (
-    <div className="container mx-auto py-[80px] text-white">
+    <section className="container mx-auto py-[40px] text-white">
       <div className="flex items-start justify-center flex-col gap-4 pb-[40px]">
         <h1 className="text-5xl font-semibold leading-[150%]">
           Effortless Property Management
@@ -27,7 +27,7 @@ const PropertyManagement = () => {
             <p className="text-lg font-medium leading-[150%] text-[var(--color-gray_60)] ">Ready to experience hassle-free property management? Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function Experience() {
   return (
-    <div className="container mx-auto py-[80px] flex flex-col items-start justify-center gap-[80px] text-white">
+    <section className="container mx-auto py-[40px] flex flex-col items-start justify-center gap-[80px] text-white">
       <div className="flex flex-col items-start justify-center gap-5">
         <h1 className="text-5xl font-semibold leading-[150%]">
           Navigating the Estatein Experience
@@ -19,6 +19,6 @@ export default function Experience() {
           })
         }
       </div>
-    </div>
+    </section>
   );
 }

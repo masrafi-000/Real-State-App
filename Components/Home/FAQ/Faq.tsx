@@ -14,7 +14,7 @@ type Props = {
   options?: EmblaOptionsType;
 };
 
-const Faq: React.FC<Props> = ({ slides, options }) => {
+const Faq: React.FC<Props> = ({ options }) => {
   const autoplay = Autoplay({ delay: 4000, stopOnInteraction: true });
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options }, [autoplay]);
@@ -23,7 +23,7 @@ const Faq: React.FC<Props> = ({ slides, options }) => {
   const onNavButtonClick = useCallback(() => {
     if (!autoplay) return;
     autoplay.stop();
-  }, []);
+  }, [autoplay]);
 
   const {
     prevBtnDisabled,

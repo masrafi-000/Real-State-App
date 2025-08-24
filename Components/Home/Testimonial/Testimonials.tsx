@@ -18,7 +18,7 @@ type Props = {
  
 
 const Testimonials: React.FC<Props> = (props) => {
-  const {slides, options} = props
+  const { options} = props
   const autoplayOptions = {
     delay: 4000,
     stopOnInteraction: true,
@@ -66,7 +66,7 @@ const Testimonials: React.FC<Props> = (props) => {
 
 
   return (
-    <div className="relative container mx-auto mt-[150px] px-4">
+    <div className="relative container mx-auto mt-[80px] px-4">
       {/* Heading */}
       <div className="max-w-[1200px] mb-[80px] text-white">
         <h1 className="text-6xl font-semibold leading-[150%] mb-4">

@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[var(--color-gray_08)]">
+    <section className="bg-[var(--color-gray_08)]">
       <div className="container mx-auto bg-[var(--color-gray_08)] ">
         <FotterTop />
         <div className="grid grid-cols-3  gap-[80px] p-4 sm:p-8">
@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

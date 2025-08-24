@@ -1,9 +1,7 @@
-import React from 'react'
-import Hero from './Hero/Hero'
-import FeaturedProperties from './FeaturedProperties/FeaturedProperties'
-import Testimonials from './Testimonial/Testimonials'
 import Faq from './FAQ/Faq'
-import Footer from './Footer/Footer'
+import FeaturedProperties from './FeaturedProperties/FeaturedProperties'
+import Hero from './Hero/Hero'
+import Testimonials from './Testimonial/Testimonials'
 
 const Home = () => {
   return (
