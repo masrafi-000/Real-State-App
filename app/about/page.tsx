@@ -1,9 +1,9 @@
-import Achivement from "@/Components/About/Achivement/Achivement";
-import Client from "@/Components/About/Client/Client";
-import Experience from "@/Components/About/Experience/Experience";
-import OurJourney from "@/Components/About/Journey/OurJourney";
-import Team from "@/Components/About/Team/Team";
-import OurValue from "@/Components/About/Value/OurValue";
+import Achivement from "@/components/shared/About/Achivement/Achivement";
+import Client from "@/components/shared/About/Client/Client";
+import Experience from "@/components/shared/About/Experience/Experience";
+import OurJourney from "@/components/shared/About/Journey/OurJourney";
+import Team from "@/components/shared/About/Team/Team";
+import OurValue from "@/components/shared/About/Value/OurValue";
 
 const AboutUsPage = () => {
   return (
@@ -14,7 +14,10 @@ const AboutUsPage = () => {
         <Achivement />
         <Experience />
         <Team />
-        <Client slides={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]} options={{ loop: false }}  />
+        <Client
+          slides={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
+          options={{ loop: false }}
+        />
       </div>
     </div>
   );

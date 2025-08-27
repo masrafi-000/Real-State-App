@@ -1,5 +1,11 @@
 import { nanoid } from "nanoid";
 import { StaticImageData } from "next/image";
+import { ComponentType } from "react";
+import { AiFillPieChart } from "react-icons/ai";
+import { BsFillBarChartFill, BsFire, BsStars } from "react-icons/bs";
+import { FaBullhorn, FaTags } from "react-icons/fa6";
+import { HiCircleStack, HiLightBulb } from "react-icons/hi2";
+import { MdDashboardCustomize, MdSunny } from "react-icons/md";
 import timage1 from "../public/images/Profile-1.png";
 import timage2 from "../public/images/Profile-2.png";
 import timage3 from "../public/images/Profile-3.png";
@@ -16,18 +22,10 @@ import pimage6 from "../public/images/properties-6.png";
 import pimage7 from "../public/images/properties-7.png";
 import pimage8 from "../public/images/properties-8.png";
 import pimage9 from "../public/images/properties-9.png";
-import timgae1 from "../public/images/team-1.png"
-import timgae2 from "../public/images/team-2.png"
+import timgae1 from "../public/images/team-1.png";
+import timgae2 from "../public/images/team-2.png";
 import timgae3 from "../public/images/team-3.png";
 import timgae4 from "../public/images/team-4.png";
-import {  ComponentType } from "react";
-import { BsFillBarChartFill, BsStars } from "react-icons/bs";
-import { AiFillPieChart } from "react-icons/ai";
-import { HiCircleStack } from "react-icons/hi2";
-import { FaBullhorn, FaTags } from "react-icons/fa6";
-import { MdDashboardCustomize, MdSunny } from "react-icons/md";
-import { BsFire } from "react-icons/bs";
-import { HiLightBulb } from "react-icons/hi2";
 
 interface NavbarItem {
   id: number;
@@ -70,9 +68,11 @@ export interface PorpertiesCardItem {
   price: string;
 }
 
+const uniqueId = 11111111;
+
 export const PorpertiesCardItem: PorpertiesCardItem[] = [
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 1,
     image: pimage1,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -82,7 +82,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 2,
     image: pimage2,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -92,7 +92,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 3,
     image: pimage3,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -102,7 +102,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 4,
     image: pimage4,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -112,7 +112,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 5,
     image: pimage5,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -122,7 +122,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 6,
     image: pimage6,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -132,7 +132,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 7,
     image: pimage7,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -142,7 +142,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 8,
     image: pimage8,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -152,7 +152,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 9,
     image: pimage9,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -162,7 +162,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 10,
     image: pimage10,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -172,7 +172,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 11,
     image: pimage11,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -182,7 +182,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 12,
     image: pimage12,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -192,7 +192,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: nanoid(),
+    id: `${uniqueId}` + 13,
     image: pimage13,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -202,6 +202,14 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
 ];
+
+export function getPropertyById(id: string) {
+  for (const item of PorpertiesCardItem) {
+    if (id == item.id) {
+      return item;
+    }
+  }
+}
 
 interface TestimonialItem {
   id: string;
@@ -363,12 +371,11 @@ export const ExperienceCardData: ExperienceCardData[] = [
   },
 ];
 
-
 interface TeamMemberData {
-  id: string
+  id: string;
   image: StaticImageData;
   name: string;
-  title: string
+  title: string;
 }
 
 export const TeamMemberData: TeamMemberData[] = [
@@ -376,119 +383,121 @@ export const TeamMemberData: TeamMemberData[] = [
     id: nanoid(),
     image: timgae1,
     name: "Max Mitchell",
-    title: "Founder"
+    title: "Founder",
   },
   {
     id: nanoid(),
     image: timgae2,
     name: "Sarah Johnson",
-    title: "Chief Real Estate Officer"
+    title: "Chief Real Estate Officer",
   },
   {
     id: nanoid(),
     image: timgae3,
     name: "David Brown",
-    title: "Head of Property Management"
+    title: "Head of Property Management",
   },
   {
     id: nanoid(),
     image: timgae4,
     name: "Michael Turner",
-    title: "Legal Counsel"
+    title: "Legal Counsel",
   },
+];
 
-
-]
-
-
- export interface PropertiesValueCardData<T> {
+export interface PropertiesValueCardData<T> {
   id: string;
   icon: ComponentType<T>;
   title: string;
   desc: string;
 }
 
-export const PropertiesValueCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
+export const PropertiesValueCardData: PropertiesValueCardData<
+  React.ComponentProps<"svg">
+>[] = [
   {
     id: nanoid(),
     icon: BsFillBarChartFill,
-    
-    title:" Valuation Mastery",
-    desc: "Discover the true worth of your property with our expert valuation services."
+
+    title: " Valuation Mastery",
+    desc: "Discover the true worth of your property with our expert valuation services.",
   },
   {
-    id:nanoid(),
+    id: nanoid(),
     icon: AiFillPieChart,
-   
+
     title: "Strategic Marketing",
-    desc: "Selling a property requires more than just a listing; it demands a strategic marketing approach."
+    desc: "Selling a property requires more than just a listing; it demands a strategic marketing approach.",
   },
   {
-    id:nanoid(),
+    id: nanoid(),
     icon: HiCircleStack,
-    
+
     title: "Negotiation Wizardry",
-    desc: "Negotiating the best deal is an art, and our negotiation experts are masters of it."
+    desc: "Negotiating the best deal is an art, and our negotiation experts are masters of it.",
   },
   {
-    id:nanoid(),
+    id: nanoid(),
     icon: FaBullhorn,
     title: "Closing Success",
-    desc: "A successful sale is not complete until the closing. We guide you through the intricate closing process."
-  }
-]
+    desc: "A successful sale is not complete until the closing. We guide you through the intricate closing process.",
+  },
+];
 
-export const PropertyManagementCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
-
+export const PropertyManagementCardData: PropertiesValueCardData<
+  React.ComponentProps<"svg">
+>[] = [
   {
     id: nanoid(),
     icon: MdDashboardCustomize,
-    title:" Tenant Harmony",
-    desc: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies."
+    title: " Tenant Harmony",
+    desc: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.",
   },
   {
     id: nanoid(),
     icon: FaTags,
-    title:" Maintenance Ease",
-    desc: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep."
+    title: " Maintenance Ease",
+    desc: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.",
   },
   {
     id: nanoid(),
     icon: BsStars,
-    title:" Financial Peace of Mind",
-    desc: "Managing property finances can be complex. Our financial experts take care of rent collection"
+    title: " Financial Peace of Mind",
+    desc: "Managing property finances can be complex. Our financial experts take care of rent collection",
   },
   {
     id: nanoid(),
     icon: MdSunny,
-    title:" Legal Guardian",
-    desc: "Stay compliant with property laws and regulations effortlessly."
+    title: " Legal Guardian",
+    desc: "Stay compliant with property laws and regulations effortlessly.",
   },
-]
+];
 
-export const DecisionsCardData: PropertiesValueCardData<React.ComponentProps<"svg">>[] = [
+export const DecisionsCardData: PropertiesValueCardData<
+  React.ComponentProps<"svg">
+>[] = [
   {
     id: nanoid(),
     icon: BsFillBarChartFill,
-    title:" Market Insight",
-    desc: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions"
+    title: " Market Insight",
+    desc: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions",
   },
   {
     id: nanoid(),
     icon: BsFire,
-    title:"ROI Assessment",
-    desc: "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments"
+    title: "ROI Assessment",
+    desc: "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments",
   },
   {
     id: nanoid(),
     icon: HiLightBulb,
-    title:"Customized Strategies",
-    desc: "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs"
+    title: "Customized Strategies",
+    desc: "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs",
   },
   {
     id: nanoid(),
     icon: MdSunny,
-    title:"Diversification Mastery",
-    desc: "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations"
+    title: "Diversification Mastery",
+    desc: "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations",
   },
-]
+];

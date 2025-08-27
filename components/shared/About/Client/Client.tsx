@@ -3,7 +3,7 @@ import {
   NextButton,
   PrevButton,
   usePrevNextButtons,
-} from "@/Components/Home/FeaturedProperties/CaruselArrow";
+} from "@/components/shared/Home/FeaturedProperties/CaruselArrow";
 import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
@@ -15,7 +15,7 @@ type Props = {
   options?: EmblaOptionsType;
 };
 
-const Client: React.FC<Props> = ({  options }) => {
+const Client: React.FC<Props> = ({ options }) => {
   const autoplay = Autoplay({ delay: 4000, stopOnInteraction: true });
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options }, [autoplay]);
@@ -74,7 +74,7 @@ const Client: React.FC<Props> = ({  options }) => {
                 >
                   <ClientCard />
                 </div>
-              )
+              );
             })
           }
         </div>

@@ -1,15 +1,13 @@
+import Footer from "@/components/shared/Home/Footer/Footer";
+import Navbar from "@/components/shared/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/Navbar/Navbar";
-import Footer from "@/Components/Home/Footer/Footer";
 
 const urbanist = Urbanist({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Estatein",
@@ -23,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${urbanist.className} antialiased`}
-      >
+      <body className={`${urbanist.className} antialiased`}>
         <Navbar />
         {children}
         <Footer />
