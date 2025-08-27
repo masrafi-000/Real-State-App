@@ -13,8 +13,8 @@ const PropertyDetails = ({ params }: { params: { id: string } }) => {
   return (
     <div className="bg-[var(--color-gray_08)] text-white ">
       <div className="container mx-auto min-h-screen">
-        <div className="grid grid-cols-3 gap-2">
-          <div className="col-span-1">
+        <div className="grid grid-cols-3 gap-2 ">
+          <div className="col-span-1 mt-[80px]">
             <Image
               src={property.image}
               alt={property.title}
