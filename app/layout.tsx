@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} antialiased`}>
+      <body className={`${urbanist.className} antialiased bg-[var(--color-gray_08)]`}>
         <Navbar />
         {children}
         <Footer />

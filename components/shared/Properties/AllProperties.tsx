@@ -2,6 +2,7 @@
 import { PorpertiesCardItem } from "@/utils/data";
 import FeaturedCard from "../Home/FeaturedProperties/FeaturedCard";
 import React from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const AllProperties = () => {
   const [product, setProduct] = React.useState(PorpertiesCardItem);
@@ -31,22 +32,22 @@ const AllProperties = () => {
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`px-3 py-2 bg-pink-800 rounded-lg ${
+            className={`px-3 py-2 bg-[var(--color-purple_75)] rounded-lg ${
               currentPage === 1
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-pink-600/20"
+                : "hover:bg-[var(--color-purple_60)]"
             }`}
           >
-            Previous
+            <ArrowLeft size={24} />
           </button>
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
             <button
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`px-4 py-3 bg-pink-800 rounded-lg flex items-center justify-between gap-2 w-fit ${
+              className={`px-4 py-2 bg-[var(--color-purple_75)] rounded-lg flex items-center justify-between gap-2 w-fit text-lg font-normal ${
                 currentPage === page
-                  ? "bg-primary text-white"
-                  : "hover:bg-purple-900/10"
+                  ? "bg-purple-900 text-white"
+                  : "hover:bg-[var(--color-purple_60)]"
               }`}
             >
               {page}
@@ -55,13 +56,13 @@ const AllProperties = () => {
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`px-3 py-2 bg-purple-600 rounded-lg  ${
+            className={`px-3 py-2 bg-[var(--color-purple_75)] rounded-lg  ${
               currentPage === totalPages
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-purple-900/10"
+                : "hover:bg-[var(--color-purple_60)]"
             }`}
           >
-            Next
+            <ArrowRight size={24} />
           </button>
         </div>
       )}
