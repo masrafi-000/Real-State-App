@@ -1,10 +1,15 @@
+"use client"
 import { getPropertyById } from "@/utils/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { use } from "react";
 
-const PropertyDetails = ({ params }: { params: { id: string } }) => {
-  const property = getPropertyById(params.id);
+const PropertyDetails = ({ params }: { params: Promise<{ id: string }> }) => {
 
+  const {id} = use(params)
+
+  const property = getPropertyById(id);
+  console.log(id, "sadfihaidfhaiainv")
   if (!property) {
     notFound();
   }
