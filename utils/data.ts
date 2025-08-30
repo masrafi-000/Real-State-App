@@ -68,11 +68,11 @@ export interface PorpertiesCardItem {
   price: string;
 }
 
-const uniqueId = 11111111;
+
 
 export const PorpertiesCardItem: PorpertiesCardItem[] = [
   {
-    id: `${uniqueId}` + 1,
+    id: "01",
     image: pimage1,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -82,7 +82,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 2,
+    id: "01",
     image: pimage2,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -92,7 +92,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 3,
+    id: "03",
     image: pimage3,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -102,7 +102,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 4,
+    id: "04",
     image: pimage4,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -112,7 +112,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 5,
+    id: "05",
     image: pimage5,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -122,7 +122,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 6,
+    id: "06",
     image: pimage6,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -132,7 +132,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 7,
+    id: "07",
     image: pimage7,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -142,7 +142,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 8,
+    id: "08",
     image: pimage8,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -152,7 +152,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 9,
+    id: "09",
     image: pimage9,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -162,7 +162,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 10,
+    id: "10",
     image: pimage10,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -172,7 +172,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 11,
+    id: "11",
     image: pimage11,
     title: "Metropolitan Haven",
     desc: "A chic and fully-furnished 2-bedroom apartment with panoramic city views...  ",
@@ -182,7 +182,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 12,
+    id: "12",
     image: pimage12,
     title: "Rustic Retreat Cottage",
     desc: "An elegant 3-bedroom, 3-bathroom townhouse in a gated community... ",
@@ -192,7 +192,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
     price: "$550,000",
   },
   {
-    id: `${uniqueId}` + 13,
+    id: "13",
     image: pimage13,
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... ",
@@ -205,7 +205,7 @@ export const PorpertiesCardItem: PorpertiesCardItem[] = [
 
 export function getPropertyById(id: string) {
   for (const item of PorpertiesCardItem) {
-    if (id == item.id) {
+    if (id === item.id) {
       return item;
     }
   }

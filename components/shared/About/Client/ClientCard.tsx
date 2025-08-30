@@ -40,7 +40,7 @@ export default function ClientCard() {
         </div>
         <div className="p-[30px] flex flex-col gap-4 items-start justify-center border border-[var(--color-gray_15)] rounded-2xl shadow-2xl hover:shadow transition-all duration-300  ">
             <h2 className="text-lg font-normal leading-[150%] text-[var(--color-gray_60)] ">What They Said 🤗</h2>
-            <p className="text-lg font-semibold leading-[150%] text-white ">Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.</p>
+            <p className="text-lg font-semibold leading-[150%] text-white ">{`Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.`}</p>
         </div>
       </div>
     </div>

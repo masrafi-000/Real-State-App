@@ -5,7 +5,7 @@ import React from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const AllProperties = () => {
-  const [product, setProduct] = React.useState(PorpertiesCardItem);
+  const [product] = React.useState(PorpertiesCardItem);
   const [currentPage, setCurrentPage] = React.useState(1);
 
   const productPerPage = 6;

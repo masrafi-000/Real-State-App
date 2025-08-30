@@ -15,7 +15,7 @@ type Props = {
 };
 
 const FeaturedProperties: React.FC<Props> = (props) => {
-  const { slides, options } = props;
+  const {  options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
   const [scrollProgress, setScrollProgress] = useState(0);
 

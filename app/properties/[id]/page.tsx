@@ -1,4 +1,3 @@
-"use client";
 import { getPropertyById } from "@/utils/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
