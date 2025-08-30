@@ -7,8 +7,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { PorpertiesCardItem } from "@/utils/data";
 
 const PropertiesAllSearch = () => {
+  const length = PorpertiesCardItem.length;
+
   return (
     <section className="container mx-auto py-8 text-white absolute transform -translate-y-1/3 left-1/2 -translate-x-1/2">
       <div className="w-full flex flex-col gap-6 items-center justify-center bg-[var(--color-gray_10)] p-6 rounded-2xl">
@@ -24,7 +27,7 @@ const PropertiesAllSearch = () => {
         </div>
         <div className="w-[90%] flex items-center justify-between flex-wrap gap-2 ">
           <Select>
-            <SelectTrigger className="w-[250px]">
+            <SelectTrigger className="w-[250px] min-h-[60px] bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] shadow-md   ">
               <SelectValue placeholder="Location" />
             </SelectTrigger>
             <SelectContent className="bg-[var(--color-gray_15)] text-[var(--color-gray_60)] font-medium border border-[var(--color-gray_20)] shadow-2xl ">
@@ -39,7 +42,7 @@ const PropertiesAllSearch = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[250px]">
+            <SelectTrigger className="w-[250px] min-h-[60px] bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] shadow-md   ">
               <SelectValue placeholder="Property Type" />
             </SelectTrigger>
             <SelectContent className="bg-[var(--color-gray_15)] text-[var(--color-gray_60)] font-medium border border-[var(--color-gray_20)] shadow-2xl ">
@@ -54,7 +57,7 @@ const PropertiesAllSearch = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[250px]">
+            <SelectTrigger className="w-[250px] min-h-[60px] bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] shadow-md   ">
               <SelectValue placeholder="Pricing Range" />
             </SelectTrigger>
             <SelectContent className="bg-[var(--color-gray_15)] text-[var(--color-gray_60)] font-medium border border-[var(--color-gray_20)] shadow-2xl ">
@@ -69,7 +72,7 @@ const PropertiesAllSearch = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[250px]">
+            <SelectTrigger className="w-[250px] min-h-[60px] bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] shadow-md   ">
               <SelectValue placeholder="Property Size" />
             </SelectTrigger>
             <SelectContent className="bg-[var(--color-gray_15)] text-[var(--color-gray_60)] font-medium border border-[var(--color-gray_20)] shadow-2xl ">
@@ -84,7 +87,7 @@ const PropertiesAllSearch = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[250px]">
+            <SelectTrigger className="w-[250px] min-h-[60px] bg-[var(--color-gray_10)] border border-[var(--color-gray_15)] shadow-md   ">
               <SelectValue placeholder="Build Year" />
             </SelectTrigger>
             <SelectContent className="bg-[var(--color-gray_15)] text-[var(--color-gray_60)] font-medium border border-[var(--color-gray_20)] shadow-2xl ">
@@ -103,7 +106,7 @@ const PropertiesAllSearch = () => {
             <button className="py-3 px-5 bg-[var(--color-gray_20)] text-[var(--color-gray_60)] text-lg font-medium tracking-wide rounded-xl cursor-pointer hover:bg-gray-700">
               Clear Filters
             </button>
-            <p className="text-[var(--color-gray_60)] text-xl">Available Properties: {/* Display filtered properties count here */}</p>
+            <p className="text-[var(--color-gray_60)] text-xl">All Available Properties: {length }</p>
         </div>
       </div>
     </section>
