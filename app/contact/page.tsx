@@ -1,6 +1,7 @@
 import ContactCard from '@/components/shared/Contact/ContactCard'
 import ContactForm from '@/components/shared/Contact/ContactForm'
 import ContactHero from '@/components/shared/Contact/Hero'
+import OfficeLocation from '@/components/shared/Contact/OfficeLocations'
 import React from 'react'
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
       <ContactHero />
       <ContactCard />
       <ContactForm />
+      <OfficeLocation />
     </div>
   )
 }
