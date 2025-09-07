@@ -1,15 +1,16 @@
-"use client"
+"use client";
+import PropertieDetails from "@/components/shared/PropertieDetails/PropertieDescription";
 import { getPropertyById } from "@/utils/data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { use } from "react";
+import { IoArrowBackOutline, IoArrowForwardOutline } from "react-icons/io5";
 
 const PropertyDetails = ({ params }: { params: Promise<{ id: string }> }) => {
-
-  const {id} = use(params)
+  const { id } = use(params);
 
   const property = getPropertyById(id);
-  console.log(id, "sadfihaidfhaiainv")
+  console.log(id, "sadfihaidfhaiainv");
   if (!property) {
     notFound();
   }
@@ -55,11 +56,17 @@ const PropertyDetails = ({ params }: { params: Promise<{ id: string }> }) => {
             </div>
           </div>
           <div className="flex items-center justify-between space-x-6    border border-[var(--color-gray_15)] rounded-full bg-[var(--color-gray_08)] shadow-xl w-[300px] h-[60px] p-1 ">
-            <button className="bg-[var(--color-gray_10) ] p-6 rounded-full border border-[var(--color-gray_15)] flex items-center justify-center "></button>
-            <button className="bg-[var(--color-gray_10) ] p-6 rounded-full border border-[var(--color-gray_15)] flex items-center justify-center "></button>
+            <button className="bg-[var(--color-gray_10) ] p-3  rounded-full border border-[var(--color-gray_15)] flex items-center justify-center ">
+              <IoArrowBackOutline size={24} />
+            </button>
+            <button className="bg-[var(--color-gray_10) ] p-3 rounded-full border border-[var(--color-gray_15)] flex items-center justify-center ">
+              <IoArrowForwardOutline size={24} />
+            </button>
           </div>
         </div>
-        <div></div>
+        <div>
+          <PropertieDetails />
+        </div>
       </div>
     </div>
   );

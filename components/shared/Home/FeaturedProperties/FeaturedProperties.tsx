@@ -70,9 +70,9 @@ const FeaturedProperties: React.FC<Props> = (props) => {
       {/* Carousel */}
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="embla__container flex gap-2">
-          {PorpertiesCardItem.map((item) => (
+          {PorpertiesCardItem.map((item, id) => (
             <div
-              key={item.id}
+              key={id}
               className="shrink-0 grow-0 basis-full sm:basis-[80%] md:basis-[40%] lg:basis-[25%] transform translate-x-0 translate-y-0  "
             >
               <FeaturedCard item={item} />
